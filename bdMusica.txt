@@ -1,0 +1,36 @@
+create database bdMusica;
+use bdMusica;
+
+create table tbMusica(
+	id_Musica int primary key auto_increment,
+    nome_Musica varchar(30),
+    artista varchar(30),
+    genero varchar(30)
+    );
+    
+create table tbAlbum(
+	id_Album int primary key auto_increment,
+    nome_Album varchar(20),
+    gravadora varchar(20)
+    );
+
+    
+alter table tbMusica add column fk_id_Album int;
+
+insert into tbAlbum value (null,'Album 1','Gravadora 1'),
+							(null,'Album 2','Gravadora 2'),
+							(null,'Album 3','Gravadora 3');
+						
+insert into tbAlbum value (null,'Album 4','Gravadora 3');
+                            
+insert into tbMusica value (null,'musica 1','artista 1','genero 1',1),
+							(null,'musica 2','artista 2','genero 2',2),
+                            (null,'musica 3','artista 3','genero 3',3);
+
+insert into tbMusica value (null,'musica 4','artista 4','genero 4',3);
+
+select tbMusica.*, tbAlbum.* from tbMusica, tbAlbum where fk_id_Album = id_Album;
+
+select tbMusica.*, tbAlbum.* from tbMusica, tbAlbum where fk_id_Album = 1 and id_album = 1;
+
+select tbMusica.*, tbAlbum.* from tbMusica, tbAlbum where gravadora = 'gravadora 3' and fk_id_album = 3;
