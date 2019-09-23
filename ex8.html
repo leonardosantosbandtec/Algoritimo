@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="homen" placeholder="Quantidade de homens">
+    <input type="text" id="mulher" placeholder="Quantidade de mulheres">
+
+    <button onclick="calcular()">calcular</button>
+
+    <div id="resposta"></div>
+    
+</body>
+</html>
+
+
+<script>
+
+     
+
+     function calcular(){
+
+         var peso_homen = 90* Number(homen.value);
+         var peso_mulher = 70* Number(mulher.value);
+
+            var result = peso_homen + peso_mulher;
+
+        var saida = result - 500;
+
+            if(result < 500){
+
+                resposta.innerHTML = `Elevador vai se mover pq esta com ${result}Kg`;
+
+            }else{
+
+                resposta.innerHTML = `Alguem precisa descer, precisa perder ${saida}Kg para mover o elevador`
+
+            }
+     } 
+
+</script>
