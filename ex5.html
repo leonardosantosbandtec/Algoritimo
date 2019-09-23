@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="valor" placeholder="Quanto?">
+    <button onclick="calcular()">Poder de compra</button>
+
+    <div id="resposta"></div>
+</body>
+
+</html>
+
+
+<script>
+
+    function calcular() {
+
+
+        var economizando = Number(valor.value);
+
+        if (economizando == 0) {
+
+            resposta.innerHTML = `Nada de compras`;
+
+
+        }
+
+
+        if (economizando >= 1) {
+
+            resposta.innerHTML = `Viagem de ida e volta para praia grande`;
+
+            if (economizando <= 100) {
+
+                resposta.innerHTML = `Viagem de ida e volta para praia grande`;
+
+
+
+            }
+
+        }
+
+        if (economizando > 100) {
+
+            resposta.innerHTML = `Uma boa moto usada`;
+
+            if (economizando < 4000) {
+
+                resposta.innerHTML = `Uma boa moto usada`;
+
+            } 
+
+            if (economizando >= 4000) {
+
+                resposta.innerHTML = `Qualquer outra merda`;
+
+            }
+        }
+
+    }
+
+
+
+</script>
