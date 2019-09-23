@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+        <input type="text" id="saldo" placeholder="saldo">
+        <button onclick="calcular()">Verificar finanças</button>
+
+        <div id="conta"></div>
+
+</body>
+</html>
+
+
+<script>
+
+    function calcular(){
+
+        var saldo_atual = Number(saldo.value);
+
+        if(saldo_atual == 0){
+
+            conta.innerHTML = `Conta zerada`;
+            conta.style.color = "black";
+        }
+
+        
+        if(saldo_atual < 0 ){
+
+            conta.innerHTML = `Esta Devendo`;
+            conta.style.color = "red";
+        }
+
+        if(saldo_atual < -1000){
+            
+            conta.innerHTML = `Endividado`
+            conta.style.color = "red";
+
+        }
+
+        if(saldo_atual >0){
+            conta.innerHTML = `Positivo`;
+            conta.style.color = "green";
+        }      
+    }
+</script>
