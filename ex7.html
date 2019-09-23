@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <input type="text" id="valor1" placeholder="primeiro valor">
+    <input type="text" id="valor2" placeholder="segundo valor">
+
+    <button onclick="calcular()">calcular</button>
+
+</body>
+</html>
+
+
+<script>
+
+    function calcular(){
+
+            var result = Number(valor1.value) + Number(valor2.value)/2;
+
+            if(result > 5){
+
+                alert(`Parebens vc passou`);
+
+            }else{
+
+                alert(`idiota vc não passou`);
+
+            }
+
+    }
+
+</script>
