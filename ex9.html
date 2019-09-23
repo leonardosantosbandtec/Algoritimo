@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <input type="text" id="meta" placeholder="Sua meta">
+    <input type="text" id="guardando" placeholder=" quanto tem guardado?">
+
+    <button onclick="calcular()">Analisar Economia</button>
+
+    <div id="ms1" style="display: none">Parabéns, meta alcançada!</div>
+    <div id="ms2" style="display: none">Meta ultrapassada em <b id="meta_concluida">x</b></div>
+    <div id="ms3" style="display: none">Força! Ainda em busca da meta! Falta <b id="falta_valor">X</b></div>
+
+
+</body>
+
+</html>
+
+<script>
+
+        
+    function calcular() {
+
+        var meta_valor = Number(meta.value);
+        
+        var guardando_valor = Number(guardando.value);
+
+       
+
+        if (guardando_valor == meta_valor) {
+
+            ms1.style.display ="block";
+            ms2.style.display ="none";
+            ms3.style.display ="none";
+
+        }else if(guardando_valor > meta_valor){
+            ms1.style.display ="none";
+            ms3.style.display ="none";
+
+            var meta_utra = guardando_valor - meta_valor;
+
+            meta_concluida.innerHTML = meta_utra;
+
+            ms1.style.display ="block";
+            ms2.style.display ="block";
+
+
+        }else {
+            ms1.style.display ="none";
+            ms2.style.display ="none";
+            var falta =  meta_valor - guardando_valor;
+            falta_valor.innerHTML = falta;
+            ms3.style.display ="block";
+
+        }
+
+
+
+
+
+    }
+
+</script>
