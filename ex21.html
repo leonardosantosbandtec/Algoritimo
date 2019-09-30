@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="number" id="quantidade" placeholder="Solicite o valor da passagem"> <br>
+    <button onclick="comprar()">Comprar</button>
+    <div id="resposta"></div>
+
+
+</body>
+</html>
+
+<script>
+
+    
+
+     function comprar(){
+
+
+
+        var qtd = Number(quantidade.value);
+        if(qtd >= 8 && qtd <= 50 ){
+
+        var valor = qtd*4.00;
+            
+            if(qtd >= 8 && qtd <= 19){
+
+                alert(`3%`);    
+                var valor1 = valor-(valor*0.03);
+                resposta.innerHTML = `Total a pagar: ${valor1.toFixed(2)}`;            
+
+            }
+            if(qtd >= 20 && qtd <= 49){
+
+                alert(`5%`);
+                var valor2 = valor-(valor*0.05);
+                resposta.innerHTML = `Total a pagar: ${valor2.toFixed(2)}`;
+                
+            }
+            
+            if(qtd >= 50){
+
+                alert(`7%`);
+                var valor3 = valor-(valor*0.07);
+                resposta.innerHTML = `Total a pagar: ${valor3.toFixed(2)}`;
+
+}
+        
+
+        }else{
+
+            resposta.innerHTML = `Quantidade inválida para o Fidelidade!`;
+
+        }
+        
+
+
+
+     }
+
+</script>
