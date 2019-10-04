@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <select name="" id="conducao">
+
+        <option value="bus">Onibus</option>
+        <option value="met">Metro</option>
+        <option value="car">Carro</option>
+        <option value="bike">Bicicleta</option>
+        <option value="lota">Lotação</option>
+        
+    </select>
+
+        <button onclick="calcular()">Calcular cansaço </button>
+
+
+</body>
+</html>
+
+
+<script>
+
+    function calcular(){
+
+        var cond_valor = conducao.value;
+
+        if(cond_valor == 'car' || cond_valor =='bike' ){
+
+            alert(`Tá tranquilo`);
+
+        }
+        if(cond_valor == 'met'){
+
+            alert(`Um pouco cansado`);
+
+        }
+        if(cond_valor == 'bus' || cond_valor == 'lota'){
+
+            alert(`vish vive cansado`);
+
+        }
+
+    }
+
+
+</script>
