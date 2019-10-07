@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Informação de textos</h2>
+
+    Digite algo <input id="frase" type="text" onkeyup="analisar()"> <br>
+
+    <div>
+
+        quantas letras? <b id="v_letras"></b> <br>
+        começa com 'a'  <b id="v_comeca_a"></b> <br>
+        termina com 'c'<b id="v_termina_c"></b> <br>
+        contem '@'      <b id="v_contem_arroba"></b> <br>
+        esta vazia      <b id="v_vazia"></b>
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+
+        function analisar(){
+
+            var valor_frase = frase.value;
+
+            v_letras.innerHTML = valor_frase.length;
+            v_comeca_a.innerHTML = valor_frase.startsWith('a');
+            v_termina_c.innerHTML = valor_frase.endsWith('c');
+
+            v_contem_arroba.innerHTML = valor_frase.indexOf('@')>=0;
+
+            v_vazia.innerHTML = valor_frase == '';
+
+            v_vazia.innerHTML = valor_frase.length == 0;
+
+        }
+
+</script>
