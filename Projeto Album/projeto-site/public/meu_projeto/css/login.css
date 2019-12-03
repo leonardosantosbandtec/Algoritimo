@@ -1,0 +1,80 @@
+*{
+
+    margin: 0px;
+    top:0px;
+
+}
+
+.pai{
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+
+
+}
+
+.login{
+
+    position: relative;
+    width: 30%;
+    height: 100%;
+    background-color: green;
+
+}
+
+.txtEmail{
+
+    position: fixed;
+    margin-top: 20%;
+    margin-left: 30px;
+    width: 300px;
+    height: 30px;
+
+}
+
+.txtSenha{
+
+    position: fixed;
+    margin-top: 25%;
+    margin-left: 30px;
+    width: 300px;
+    height: 30px;
+
+}
+
+.divCadastro{
+
+    position: fixed;
+    margin-top: 28%;
+    margin-left: 230px;
+    
+
+}
+
+.btnLogar{
+
+    position: fixed;
+    height: 30px;
+    width:  100px;
+    margin-top: 33%;
+    margin-left: 130px;
+
+}
+
+
+.divDireitos{
+
+    position: fixed;
+    margin-top: 47%;
+    margin-left: 130px; 
+
+}
+
+.divDireitos span{
+
+    color: white;
+
+}
+

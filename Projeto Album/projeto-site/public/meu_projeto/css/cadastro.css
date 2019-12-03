@@ -1,0 +1,80 @@
+*{
+
+    margin: 0px;
+    top: 0px;
+
+}
+
+.pai{
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+
+}
+
+.cadastro{
+
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color: green;
+    margin-left: 890px;
+
+}
+
+.txtEmail{
+
+    position: fixed;
+    margin-top: 20%;
+    margin-left: 80px;
+    width: 300px;
+    height: 30px;
+
+}
+
+
+.txtSenha{
+
+    position: fixed;
+    margin-top: 25%;
+    margin-left: 80px;
+    width: 300px;
+    height: 30px;
+
+}
+
+.txtNome{
+
+    position: fixed;
+    margin-top: 30%;
+    margin-left: 80px;
+    width: 300px;
+    height: 30px;
+
+}
+
+.btnCadastrar{
+
+    position: fixed;
+    margin-top: 35%;
+    margin-left: 190px;
+    width: 100px;
+    height: 30px;
+
+}
+
+.divDireitos{
+
+    position: fixed;
+    margin-top: 47%;
+    margin-left: 200px; 
+
+}
+
+.divDireitos span{
+
+    color: white;
+
+}
