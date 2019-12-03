@@ -1,0 +1,82 @@
+
+*{
+
+    margin: 0px;
+    top: 0px;
+
+}
+
+.corpo{
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.top{
+
+    position: fixed;
+    width: 100%;
+    height: 11%;
+    background-color: #491212;
+
+}
+
+.divContato{
+
+    position: fixed;
+    width: 60px;
+    height: 30px;
+
+    margin-left: 90%;
+    margin-top: 25px;
+
+}
+
+
+
+.divContato a{
+
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.busca{
+
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 500px;
+    height: 30px;
+    border-radius: 120px;    
+
+}
+
+.loginUser{
+
+    position: fixed;
+    margin-left: 12%;
+    margin-top: 25px;
+
+}
+
+.loginUser span{
+
+    font-size: 20px;
+    color: white;
+
+}
+
+.low{
+
+    position: fixed;
+    width: 100%;
+    height: 11%;
+    background-color: #491212;
+    margin-top: 43%;
+
+}
+
