@@ -10,16 +10,16 @@
 
     position: fixed;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     
 
 }
 
 .top{
 
-    position: fixed;
+    position: relative;
     width: 100%;
-    height: 11%;
+    height: 80px;
     background-color: #491212;
 
 }
@@ -72,11 +72,59 @@
 
 .low{
 
-    position: fixed;
+    position: relative;
     width: 100%;
-    height: 11%;
+    height: 80px;
     background-color: #491212;
-    margin-top: 43%;
+    bottom: 0px;
 
 }
 
+
+.corpoFotos{
+
+    position: relative;
+    height: 507px;
+    width: 100%;
+
+}
+
+.btnAlbum{
+
+    width:  50px;
+    height: 50px;
+    margin-top: 15px; 
+    margin-left: 20%;
+
+}
+
+.teste{
+
+    position: relative;
+    top: -50px;
+    width: 66px;
+    height: 66px;
+    background: url("../imagens/plus.png") no-repeat 100% 100%;
+    border-radius: 100px;
+    text-decoration: none;
+    display: none;
+
+
+}
+
+.img-btn{
+    position: relative;
+   /* background: yellow; */
+   width: 50px;
+   height: 50px;
+   display: inline-block;
+   top: 0px;
+   margin-left: 25%;
+   margin-top: 15px;
+}
+
+.img-btn img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
